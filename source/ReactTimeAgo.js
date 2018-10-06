@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import JavascriptTimeAgo from 'javascript-time-ago'
-import { style } from 'javascript-time-ago/prop-types'
+import JavascriptTimeAgo from 'wetimejs'
+import { style } from 'wetimejs/prop-types'
 
 import Periodic from './Periodic'
 import createVerboseDateFormatter from './verboseDateFormatter'
@@ -220,7 +220,7 @@ export default class ReactTimeAgo extends PureComponent
 			locales = [locale].concat(locales)
 		}
 
-		// `javascript-time-ago` default locale.
+		// `wetimejs` default locale.
 		locales = locales.concat(JavascriptTimeAgo.default_locale)
 
 		return locales

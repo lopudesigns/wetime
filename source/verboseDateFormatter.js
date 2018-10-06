@@ -3,9 +3,9 @@ import
 	intlDateTimeFormatSupported,
 	intlDateTimeFormatSupportedLocale
 }
-from 'javascript-time-ago'
+from 'wetimejs'
 
-import Cache from 'javascript-time-ago/cache'
+import Cache from 'wetimejs/cache'
 
 const cache = new Cache()
 

@@ -53,7 +53,7 @@ const config =
     "react"     : "React",
     "react-dom" : "ReactDOM",
     
-    "javascript-time-ago" : 'javascript-time-ago'
+    "wetimejs" : 'wetimejs'
   },
   plugins
 }

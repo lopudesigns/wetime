@@ -18,12 +18,12 @@
 1.0.0 / 09.01.2018
 ===================
 
-  * (breaking change) Updated to `javascript-time-ago@1.0.0`. Some properties got renamed.
+  * (breaking change) Updated to `wetimejs@1.0.0`. Some properties got renamed.
 
 0.5.0 / 08.01.2018
 ===================
 
-  * (breaking change) dropped `intl-messageformat` and implemented the functionality in `javascript-time-ago@0.5.0` instead (is better)
+  * (breaking change) dropped `intl-messageformat` and implemented the functionality in `wetimejs@0.5.0` instead (is better)
 
 0.4.0 / 08.01.2018
 ===================

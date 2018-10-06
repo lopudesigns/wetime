@@ -27,16 +27,16 @@ The requirement for the default exported component (the one with the tooltip com
 
 ## Use
 
-`react-time-ago` component uses [`javascript-time-ago`](https://github.com/catamphetamine/javascript-time-ago) library internally for generating localized relative time strings. When `react-time-ago` package is installed `javascript-time-ago` package is installed automatically with it. In the application's main file initialize `javascript-time-ago` library with the desired locales. By default no locales are initialized.
+`react-time-ago` component uses [`wetimejs`](https://github.com/catamphetamine/wetimejs) library internally for generating localized relative time strings. When `react-time-ago` package is installed `wetimejs` package is installed automatically with it. In the application's main file initialize `wetimejs` library with the desired locales. By default no locales are initialized.
 
 #### ./src/index.js
 
 ```js
-import JavascriptTimeAgo from 'javascript-time-ago'
+import JavascriptTimeAgo from 'wetimejs'
 
 // The desired locales.
-import en from 'javascript-time-ago/locale/en'
-import ru from 'javascript-time-ago/locale/ru'
+import en from 'wetimejs/locale/en'
+import ru from 'wetimejs/locale/ru'
 
 // Initialize the desired locales.
 JavascriptTimeAgo.locale(en)
@@ -67,11 +67,11 @@ export default function LastSeen({ date }) {
 
 `ReactTimeAgo` component accepts a `timeStyle` property which can be:
 
-  * [`"twitter"`](https://github.com/catamphetamine/javascript-time-ago#twitter-style)
-  * [`"time"`](https://github.com/catamphetamine/javascript-time-ago#just-time-style)
-  * [`{ gradation, units, flavour }`](https://github.com/catamphetamine/javascript-time-ago#customization)
+  * [`"twitter"`](https://github.com/catamphetamine/wetimejs#twitter-style)
+  * [`"time"`](https://github.com/catamphetamine/wetimejs#just-time-style)
+  * [`{ gradation, units, flavour }`](https://github.com/catamphetamine/wetimejs#customization)
 
-See [`javascript-time-ago` docs](https://github.com/catamphetamine/javascript-time-ago#advanced) for more info on how to customize the generated output.
+See [`wetimejs` docs](https://github.com/catamphetamine/wetimejs#advanced) for more info on how to customize the generated output.
 
 ## Tooltip
 
@@ -150,7 +150,7 @@ children : PropTypes.oneOfType
 
 // Date/time formatting style.
 // E.g. 'twitter', 'time', or an object.
-// See `javascript-time-ago` docs for more info.
+// See `wetimejs` docs for more info.
 timeStyle,
 
 // Whether HTML `tooltip` attribute should be set

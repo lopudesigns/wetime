@@ -5,8 +5,8 @@ import
 }
 from '../index'
 
-import javascript_time_ago from 'javascript-time-ago'
-javascript_time_ago.locale(require('javascript-time-ago/locale/en'))
+import javascript_time_ago from 'wetimejs'
+javascript_time_ago.locale(require('wetimejs/locale/en'))
 
 describe(`exports`, function()
 {

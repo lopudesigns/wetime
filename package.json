@@ -1,5 +1,5 @@
 {
-  "name": "react-time-ago",
+  "name": "wetimereactjs",
   "version": "3.0.3",
   "description": "International highly customizable relative time formatting",
   "main": "index.commonjs.js",
@@ -12,9 +12,9 @@
     "react-dom": ">=0.16.0"
   },
   "dependencies": {
-    "javascript-time-ago": "^1.0.20",
     "prop-types": "^15.6.0",
-    "react-responsive-ui": "^0.14.32"
+    "react-responsive-ui": "^0.14.40",
+    "wetimejs": "latest"
   },
   "devDependencies": {
     "babel-cli": "^6.6.5",
@@ -58,7 +58,10 @@
     "set-style-variables--black": "replace-in-file \"/var\\(--rrui-black-color\\)/g\" \"black\" ./Tooltip.css --isRegex",
     "set-style-variables--border-radius": "replace-in-file \"/var\\(--rrui-border-radius-small\\)/g\" \"0.1rem\" ./Tooltip.css --isRegex",
     "set-style-variables--unit": "replace-in-file \"/var\\(--rrui-unit\\)/g\" \"0.6rem\" ./Tooltip.css --isRegex",
-    "prepublish": "npm-run-all build test update-rrui copy-styles set-style-variables"
+    "prepublish": "npm-run-all build test update-rrui copy-styles set-style-variables",
+    "push" : "git add . ; git commit -m 'ready' ; git push origin dev",
+    "pull" : "git pull origin dev"
+
   },
   "betterScripts": {
     "browser-build": {
